@@ -1,0 +1,1 @@
+i3-msg "workspace $1 ,append_layout /home/unded/.config/i3/workspace/wekan-wiki-labtop.json, move workspace to output $2" && google-chrome --new-window 192.168.1.7:8090 & sleep 2s && google-chrome --new-window 192.168.1.10 &

@@ -1,0 +1,51 @@
+// vim:ts=4:sw=4:et
+{
+    "border": "normal",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 1041,
+       "width": 764,
+       "x": 1932,
+       "y": 28
+    },
+    "name": "‎‫بررسی مجدد و تست اولیه فرم های UI - Dadras -Task - Google Chrome‬‎",
+    "percent": 0.5,
+    "swallows": [
+       {
+       "class": "^Google\\-chrome$"
+       //"title": "^Dadras\\ \\-Task\\ \\-\\ Google\\ Chrome$",
+       // "instance": "^google\\-chrome$",
+       // "title": "^\\‎\\‫بررسی\\ مجدد\\ و\\ تست\\ اولیه\\ فرم\\ های\\ UI\\ \\-\\ Dadras\\ \\-Task\\ \\-\\ Google\\ Chrome\\‬\\‎$",
+       // "transient_for": "^$",
+       // "window_role": "^browser$"
+       }
+    ],
+    "type": "con"
+}
+
+{
+    "border": "normal",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 1041,
+       "width": 1916,
+       "x": 2,
+       "y": 52
+    },
+    "name": "‎‫| ثبت اشخاص(با هر نقشی)-تحلیل_UI - Google Chrome‬‎",
+    "percent": 0.5,
+    "swallows": [
+       {
+       "class": "^Google\\-chrome$"
+       //"title": "^\\‎\\‫\\|\\ صفحه\\ اصلی\\ نرم\\ افزار\\ \\-\\ Google\\ Chrome\\‬\\‎$"
+       // "instance": "^google\\-chrome$",
+       // "title": "^\\‎\\‫\\|\\ ثبت\\ اشخاص\\(با\\ هر\\ نقشی\\)\\-تحلیل_UI\\ \\-\\ Google\\ Chrome\\‬\\‎$",
+       // "transient_for": "^$",
+       // "window_role": "^browser$"
+       }
+    ],
+    "type": "con"
+}
+
