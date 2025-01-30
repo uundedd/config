@@ -1,0 +1,249 @@
+[
+  {
+    "key": "meta+e",
+    "command": "cursorWordEndRightSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+alt+h",
+    "command": "cursorLeftSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "meta+b",
+    "command": "cursorWordStartLeftSelect",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "meta+r",
+    "command": "workbench.debug.action.toggleRepl"
+  },
+  {
+    "key": "meta+t",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "meta+q",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "meta+i",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus",
+    "args": {
+      "langId": "typescript",
+      "name": "openMethod"
+    }
+  },
+  {
+    "key": "alt+u",
+    "command": "undo",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+m",
+    "command": "workbench.action.toggleZenMode"
+  },
+  {
+    "key": "meta+c",
+    "command": "editor.action.clipboardCutAction",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "meta+y",
+    "command": "editor.action.clipboardCopyAction",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+meta+y",
+    "command": "editor.action.clipboardCopyAction",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "meta+v",
+    "command": "editor.action.clipboardPasteAction",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "meta+a",
+    "command": "editor.action.rename",
+    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+o",
+    "command": "editor.action.previewDeclaration",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+  },
+  {
+    "key": "shift+alt+a",
+    "command": "workbench.view.debug"
+  },
+  {
+    "key": "meta+w",
+    "command": "workbench.view.explorer"
+  },
+  {
+    "key": "alt+x",
+    "command": "editor.action.nextSelectionMatchFindAction",
+    "when": "editorFocus"
+  },
+  {
+    "key": "shift+alt+s",
+    "command": "workbench.action.debug.start",
+    "when": "!inDebugMode"
+  },
+  {
+    "key": "shift+alt+d",
+    "command": "editor.debug.action.toggleBreakpoint",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+3",
+    "command": "editor.debug.action.goToNextBreakpoint"
+  },
+  {
+    "key": "shift+alt+f",
+    "command": "workbench.action.debug.stepInto",
+    "when": "inDebugMode"
+  },
+  {
+    "key": "shift+alt+2",
+    "command": "workbench.action.debug.stepOver",
+    "when": "inDebugMode"
+  },
+  {
+    "key": "shift+alt+g",
+    "command": "workbench.action.debug.stop",
+    "when": "inDebugMode"
+  },
+  {
+    "key": "alt+;",
+    "command": "editor.action.insertSnippet",
+    "args": {
+      "when": "editorTextFocus",
+      "langId": "typescript",
+      "name": "closeSemicolon"
+    }
+  },
+  {
+    "key": "alt+o",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus",
+    "args": {
+      "langId": "typescript",
+      "name": "jsonProperty"
+    }
+  },
+  {
+    "key": "alt+[",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus",
+    "args": {
+      "langId": "typescript",
+      "name": "jsonArray"
+    }
+  },
+  {
+    "key": "shift+alt+o",
+    "command": "editor.action.openDeclarationToTheSide",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+  },
+  {
+    "key": "meta+n",
+    "command": "workbench.action.navigateBack"
+  },
+  {
+    "key": "meta+m",
+    "command": "workbench.action.navigateForward"
+  },
+  {
+    "key": "alt+meta+m",
+    "command": "workbench.action.splitEditor"
+  },
+  {
+    "key": "alt+meta+n",
+    "command": "workbench.action.joinTwoGroups"
+  },
+  {
+    "key": "alt+n",
+    "command": "workbench.action.navigateEditorGroups"
+  },
+  {
+    "key": "alt+shift+i",
+    "command": "workbench.action.closeOtherEditors"
+  },
+  {
+    "key": "shift+alt+y",
+    "command": "workbench.action.toggleMaximizedPanel"
+  },
+  {
+    "key": "shift+alt+p",
+    "command": "workbench.action.maximizeEditor"
+  },
+  {
+    "key": "shift+alt+[",
+    "command": "workbench.action.evenEditorWidths"
+  },
+  {
+    "key": "shift+alt+u",
+    "command": "editor.action.insertCursorAtEndOfEachLineSelected",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+x",
+    "command": "editor.action.insertCursorBelow",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+z",
+    "command": "editor.action.insertCursorAbove",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+alt+/",
+    "command": "rest-client.request",
+    "when": "editorTextFocus && editorLangId == 'plaintext'"
+  },
+  {
+    "key": "meta+/",
+    "command": "docthis.documentThis"
+  },
+  {
+    "key": "meta+s",
+    "command": "toggleSuggestionDetails",
+    "when": "suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "ctrl+space",
+    "command": "-toggleSuggestionDetails",
+    "when": "suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "alt+meta+e",
+    "command": "workbench.actions.view.problems"
+  },
+  {
+    "key": "ctrl+shift+m",
+    "command": "-workbench.actions.view.problems"
+  },
+  {
+    "key": "meta+s",
+    "command": "editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+space",
+    "command": "-editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+p",
+    "command": "workbench.action.toggleMaximizeEditorGroup",
+    "when": "editorPartMaximizedEditorGroup || editorPartMultipleEditorGroups"
+  },
+  {
+    "key": "ctrl+k ctrl+m",
+    "command": "-workbench.action.toggleMaximizeEditorGroup",
+    "when": "editorPartMaximizedEditorGroup || editorPartMultipleEditorGroups"
+  }
+]

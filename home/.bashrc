@@ -117,3 +117,54 @@ if ! shopt -oq posix; then
   fi
 fi
 ___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh"; if [ -f "${___MY_VMOPTIONS_SHELL_FILE}" ]; then . "${___MY_VMOPTIONS_SHELL_FILE}"; fi
+
+
+######### ps1 minize ##########
+# Define color codes
+RESET="\[\033[0m\]"
+COLORS=(
+    "\[\033[31m\]"  # Red
+    "\[\033[32m\]"  # Green
+    "\[\033[33m\]"  # Yellow
+    "\[\033[34m\]"  # Blue
+    "\[\033[35m\]"  # Magenta
+    "\[\033[36m\]"  # Cyan
+    "\[\033[37m\]"  # White
+)
+
+function set_prompt {
+    # Get the current path and split it into directories
+    local path=$(pwd)
+    local prompt=""
+    local color_index=0
+
+    # Loop through each directory in the path
+    IFS='/' read -ra dirs <<< "$path"
+    
+    # Iterate over all but the last directory
+    for (( i=0; i<${#dirs[@]}-1; i++ )); do
+        dir="${dirs[i]}"
+        if [[ -n "$dir" ]]; then
+            # Append the first character of each directory with a different color and a slash
+            prompt+="${COLORS[$color_index]}${dir:0:1}${RESET}/"
+            color_index=$(( (color_index + 1) % ${#COLORS[@]} ))  # Cycle through colors
+        fi
+    done
+    
+    # Remove the trailing slash for neatness (if needed)
+    prompt=${prompt%/}
+
+    # Get the last directory name for full display
+    local last_dir="${dirs[-1]}"
+    
+    # Set PS1 with colored prompt and full last directory name
+    PS1="${prompt}/${last_dir} ${RESET}\$ "
+}
+
+# Call the function to set the prompt initially
+set_prompt
+
+# Set PROMPT_COMMAND to call set_prompt before displaying the prompt
+PROMPT_COMMAND=set_prompt
+
+######## end ps1 minize ########
